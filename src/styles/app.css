@@ -1,5 +1,3 @@
-
-
 @keyframes changeShape {
   0% {
     border-radius: 64% 36% 63% 37% / 43% 41% 59% 57%;
@@ -18,7 +16,7 @@
   }
 }
 
-.hero-img {
+.hero-img-container {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   animation: changeShape 10s infinite;
 }

@@ -7,11 +7,12 @@ export default {
     extend: {
       colors: {
         primary: "#1e1b18",
-        gray:"#d4dcdd",
+        gray: "#d4dcdd",
+        "gray-400": "#374151",
+        "gray-100": "#f3f4f6",
       },
       fontFamily: {
-        ojuju: ['Ojuju', 'sans-serif'],
-        
+        ojuju: ["Ojuju", "sans-serif"],
       },
     },
   },

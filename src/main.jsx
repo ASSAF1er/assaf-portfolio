@@ -1,5 +1,6 @@
 import "@styles/index.css";
 import "@rasenganjs/image/lib/styles/index.css";
+import "@styles/app.css";
 
 import React from "react";
 import AppRouter from "@app/app.router";
