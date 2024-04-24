@@ -6,7 +6,7 @@ function Footer() {
         <li></li>
         <li>
           Built with{" "}
-          <span className="font-bold hover:underline">Rasengan.JS</span>{" "}
+          <span className="font-bold hover:underline">RasenganJS</span>{" "}
         </li>
       </ul>
     </footer>

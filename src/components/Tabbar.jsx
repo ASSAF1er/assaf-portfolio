@@ -18,7 +18,8 @@ function Tabbar() {
       setScroll(false);
     }
   };
-  //window.addEventListener("scroll", handleNavbarStyle);
+  if (window !== undefined)
+    window.addEventListener("scroll", handleNavbarStyle);
 
   return (
     <section
