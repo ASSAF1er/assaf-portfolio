@@ -14,7 +14,7 @@ function Hero() {
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
         <p className=" relative text-[25px] mt-3 ">
-          Web Developper / Frontend specialist
+          Web Developer / Frontend specialist
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
         <div className="flex mt-5">
@@ -28,6 +28,7 @@ function Hero() {
                 Let's go !
               </li>
             </ul>
+            <div className="absolute light group-hover:hidden size-[300px] top-[-50px] left-[-50px] rounded-[50%] "></div>
           </div>
         </div>
       </div>

@@ -19,6 +19,30 @@ html {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  background-color: "#d4dcdd";
-  font-size: "Ojuju", "sans-serif";
+  background-color: #d4dcdd;
+  font-family: "Ojuju", "sans-serif";
+}
+* {
+  scroll-behavior: smooth;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1e1b18 #d4dcdd;
+}
+::-moz-scrollbar {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0;
+}
+::-moz-scrollbar-thumb {
+  background-color: #1e1b18;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1e1b18;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0;
+}
+*::-webkit-scrollbar-button {
+  display: none; /* Masquer les flèches de défilement */
 }
