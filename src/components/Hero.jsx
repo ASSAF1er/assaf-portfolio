@@ -38,7 +38,7 @@ function Hero() {
           alt="profile picture"
           width={350}
           height={350}
-          className="object-cover    "
+          className="object-cover   grayscale "
         />
       </div>
     </section>

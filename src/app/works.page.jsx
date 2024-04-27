@@ -12,22 +12,16 @@ const Works = () => {
           <div className="min-h-2 title-underline w-[200px] bg-primary"></div>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-5">
-        <div className="flex">
-          <ProjectCard />
-        </div>
-        <div className="flex justify-end">
-          <ProjectCard />
-        </div>
-        <div className="flex">
-          <ProjectCard />
-        </div>
-        <div className="flex justify-end">
-          <ProjectCard />
-        </div>
-        <div className="flex">
-          <ProjectCard />
-        </div>
+      <div className="flex flex-col w-full gap-10">
+        <ProjectCard />
+
+        <ProjectCard />
+
+        <ProjectCard />
+
+        <ProjectCard />
+
+        <ProjectCard />
       </div>
     </section>
   );
