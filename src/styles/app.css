@@ -29,7 +29,7 @@
     width: 0;
   }
   100% {
-    width: 200px;
+    width: 70%;
   }
 }
 @keyframes showBorder {
@@ -88,4 +88,7 @@
 }
 .skill-card:hover .brillance-effect {
   animation: brillanceEffect 1s linear;
+}
+.project-card:hover .brillance-effect {
+  animation: brillanceEffect 1.5s linear 2s;
 }

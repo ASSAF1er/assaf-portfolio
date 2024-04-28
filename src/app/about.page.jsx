@@ -37,7 +37,7 @@ const About = () => {
             About me
             <div className="absolute top-0 text-cover w-full bg-gray "></div>
           </h1>
-          <div className="min-h-2 title-underline w-[200px] bg-primary"></div>
+          <div className="min-h-2 title-underline w-[70%] bg-primary"></div>
         </div>
       </div>
       {/*presentation */}
