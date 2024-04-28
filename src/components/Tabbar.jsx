@@ -43,14 +43,21 @@ function Tabbar() {
           </Link>
         ))}
         <Link
-          to="/"
+          to="/reviews"
           className={classNames(
-            location.pathname === "" ? "!border-gray-100 font-bold" : "",
+            location.pathname === "/reviews"
+              ? "!border-gray-100 font-bold"
+              : "",
             "relative group rounded-md py-2 px-4 border border-gray-400 hover:border-gray-100  transition duration-400 ease-in-out cursor-pointer ",
           )}
         >
           Reviews
-          <div className="absolute group-hover:hidden top-0 right-0 translate-x-1 -translate-y-1">
+          <div
+            className={classNames(
+              location.pathname === "/reviews" ? "hidden" : "",
+              "absolute group-hover:hidden top-0 right-0 translate-x-1 -translate-y-1",
+            )}
+          >
             <span class="relative  flex h-3 w-3">
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gray-100 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-3 w-3 bg-gray-400"></span>

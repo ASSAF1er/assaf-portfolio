@@ -1,5 +1,4 @@
 import { Link } from "rasengan";
-import logo from "@assets/logo.svg";
 import Image from "@rasenganjs/image";
 import Hero from "@/components/Hero";
 
