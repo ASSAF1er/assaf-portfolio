@@ -10,6 +10,8 @@ import express from "@assets/Express.js_dark.svg";
 import mongodb from "@assets/mongodb.svg";
 import vercel from "@assets/Vercel_dark.svg";
 import github from "@assets/github.svg";
+import profile from "@assets/profile.png";
+import Image from "@rasenganjs/image";
 const About = () => {
   const skillsFrontend = [
     { name: "RasenganJS", photo: rasengan },
@@ -29,6 +31,19 @@ const About = () => {
     { name: "Vercel", photo: vercel },
     { name: "", photo: "" },
   ];
+
+  // const items = document?.querySelectorAll(".about-image");
+
+  // items.forEach((item) => {
+  //   item.addEventListener("mouseover", () => {
+  //     items.forEach((otherItem) => {
+  //       otherItem.classList.remove("w-[300px]");
+  //       otherItem.classList.remove(" w-10 ");
+  //     });
+  //     item.classList.add("w-[300px]");
+  //   });
+  // });
+
   return (
     <section className="bg-gray font-ojuju px-[10%]">
       <div className="h-screen w-full flex items-center justify-center text-primary text-[60px]  font-bold">
@@ -41,10 +56,10 @@ const About = () => {
         </div>
       </div>
       {/*presentation */}
-      <section className="py-32 w-full flex  ">
-        <div className="w-70%">
-          <h3 className="font-bold text-[60px] ">I am,</h3>
-          <div className="font- text-[20px] ">
+      <section className="flex flex-col py-32 w-full h-auto ">
+        <h3 className="font-bold text-[60px] ">I am,</h3>
+        <div className="flex gap-5 h-full">
+          <div className="flex flex-1 font-medium text-[20px] ">
             <br />
             Beral ASSONFACK, a web developer passionate about crafting beautiful
             and flawless websites. With a keen eye for detail and a commitment
@@ -59,6 +74,28 @@ const About = () => {
             Tailwind and recently RasenganJS to back-end development with
             frameworks like Node.js and databases like MongoDB, I thrive on the
             challenges of building robust and scalable web applications.
+          </div>
+          <div className="group flex  h-[350px] gap-2 ">
+            <img
+              src={profile}
+              alt="profile"
+              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10   duration-500 ease-in-out"
+            />
+            <img
+              src={profile}
+              alt="profile"
+              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
+            />
+            <img
+              src={profile}
+              alt="profile"
+              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
+            />
+            <img
+              src={profile}
+              alt="profile"
+              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
+            />
           </div>
         </div>
       </section>

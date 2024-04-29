@@ -6,7 +6,7 @@ const Reviews = () => {
   return (
     <section className="bg-gray px-[10%] ">
       <div className=" w-full flex flex-col items-center justify-center text-primary ">
-        <div className="pt-40 p-20 text-primary text-[60px] font-ojuju font-bold">
+        <div className="pt-40 pb-20 text-primary text-[60px] font-ojuju font-bold">
           <h1 className="relative">
             Leave me a review
             <div className="absolute top-0 text-cover w-full bg-gray "></div>
