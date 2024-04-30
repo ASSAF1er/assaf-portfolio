@@ -8,7 +8,7 @@ const Home = () => {
 
 Home.path = "/";
 Home.metadata = {
-  title: "Home",
+  title: "Home | Beral ASSONFACK",
   description: "Home page",
 };
 

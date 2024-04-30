@@ -11,7 +11,7 @@ function Footer() {
         <li>
           <ul className="flex gap-2 items-center">
             <li>
-              <Link to="">
+              <Link to="https://github.com/ASSAF1er/">
                 <Image
                   src={github}
                   alt="github"
@@ -22,7 +22,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="https://www.linkedin.com/in/beral-assonfack-5a462727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <Image
                   src={linkedin}
                   alt="github"
@@ -33,7 +33,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="">
+              <Link to="mailto:beral.assaf@gmail.com">
                 <Image
                   src={email}
                   alt="github"

@@ -7,13 +7,18 @@ import ContactCard from "@/components/ContactCard";
 import { Link } from "rasengan";
 const Contact = () => {
   const contacts = [
-    { photo: github, title: "GitHub", subTitle: "ASSAF1er", url: "" },
+    {
+      photo: github,
+      title: "GitHub",
+      subTitle: "ASSAF1er",
+      url: "https://github.com/ASSAF1er/",
+    },
     { photo: call, title: "Book a call", subTitle: "calendly.com", url: "" },
     {
       photo: linkedin,
       title: "Linkedin",
       subTitle: "Beral ASSONFACK",
-      url: "",
+      url: "https://www.linkedin.com/in/beral-assonfack-5a462727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ];
   return (
@@ -29,7 +34,7 @@ const Contact = () => {
 
         <div className="flex gap-5">
           <Link
-            to=""
+            to="mailto:beral.assaf@gmail.com"
             className="flex gap-3 px-4 h-[100px] w-[280px]  bg-primary rounded-md shadow-xl hover:shadow-sm"
           >
             <div className="flex items-center justify-center rounded-full">
@@ -112,7 +117,7 @@ const Contact = () => {
 
 Contact.path = "/contact";
 Contact.metadata = {
-  title: "Contact Page",
+  title: "Contact | Beral ASSONFACK",
   description: "my contacts",
 };
 export default Contact;

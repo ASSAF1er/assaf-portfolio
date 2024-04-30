@@ -64,7 +64,7 @@ const Works = () => {
 
 Works.path = "/works";
 Works.metadata = {
-  title: "Works page",
+  title: "Works | Beral ASSONFACK",
   description: "my works",
 };
 export default Works;

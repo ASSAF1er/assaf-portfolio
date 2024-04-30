@@ -60,7 +60,6 @@ const About = () => {
         <h3 className="font-bold text-[60px] ">I am,</h3>
         <div className="flex gap-5 h-full">
           <div className="flex flex-1 font-medium text-[20px] ">
-            <br />
             Beral ASSONFACK, a web developer passionate about crafting beautiful
             and flawless websites. With a keen eye for detail and a commitment
             to precision, I specialize in creating designs that are not only
@@ -174,7 +173,7 @@ const About = () => {
 
 About.path = "/about";
 About.metadata = {
-  title: "About Page",
+  title: "About | Beral ASSONFACK",
   description: "About me",
 };
 export default About;
