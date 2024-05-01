@@ -90,5 +90,5 @@
   animation: brillanceEffect 1s linear;
 }
 .project-card:hover .brillance-effect {
-  animation: brillanceEffect 1.5s linear 2s;
+  animation: brillanceEffect 1.5s linear 1s;
 }

@@ -14,7 +14,7 @@ function ProjectCard({ name, description, url, photo }) {
         />
       </div>
       <div className="z-10   w-full flex items-center justify-center overflow-hidden">
-        <div className="flex flex-col gap-3 items-center justify-center overflow-hidden group-even:translate-x-[100%] odd:-translate-x-[80%] opacity-0 scale-0   invisible group-hover:-translate-x-[0%] group-hover:visible group-hover:opacity-100 group-hover:scale-100 duration-[1.5s] ease-in-out">
+        <div className="flex flex-col gap-3 items-center justify-center overflow-hidden group-even:translate-x-[100%] odd:-translate-x-[80%] opacity-0 scale-0   invisible group-hover:-translate-x-[0%] group-hover:visible group-hover:opacity-100 group-hover:scale-100 duration-700 ease-in-out">
           <h1 className="text-[30px] font-bold">{name}</h1>
           <p className="text-center text-[20px] font-medium ">{description}</p>
           <Link
