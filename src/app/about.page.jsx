@@ -10,8 +10,11 @@ import express from "@assets/Express.js_dark.svg";
 import mongodb from "@assets/mongodb.svg";
 import vercel from "@assets/Vercel_dark.svg";
 import github from "@assets/github.svg";
-import profile from "@assets/profile.png";
+import profile1 from "@assets/profile1.jpeg";
 import Image from "@rasenganjs/image";
+import profile2 from "@assets/profile2.jpeg";
+import profile3 from "@assets/profile3.jpeg";
+import profile4 from "@assets/profile4.jpeg";
 const About = () => {
   const skillsFrontend = [
     { name: "RasenganJS", photo: rasengan },
@@ -76,22 +79,22 @@ const About = () => {
           </div>
           <div className="group flex  h-[350px] gap-2 ">
             <img
-              src={profile}
+              src={profile1}
               alt="profile"
               className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10   duration-500 ease-in-out"
             />
             <img
-              src={profile}
+              src={profile2}
               alt="profile"
               className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
             />
             <img
-              src={profile}
+              src={profile3}
               alt="profile"
               className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
             />
             <img
-              src={profile}
+              src={profile4}
               alt="profile"
               className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
             />

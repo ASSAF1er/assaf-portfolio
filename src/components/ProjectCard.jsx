@@ -1,7 +1,7 @@
 import Image from "@rasenganjs/image";
 import { Link } from "rasengan";
 import agroreau_preview from "@assets/agroreseau_preview.png";
-function ProjectCard({ name, description, url, photo }) {
+function ProjectCard({ name, skills, description, url, photo }) {
   return (
     <div className="z-30 project-card group flex gap-3 flex-row even:flex-row-reverse even:justify-end  grayscale hover:grayscale-0  ">
       <div className="z-20">
@@ -16,6 +16,13 @@ function ProjectCard({ name, description, url, photo }) {
       <div className="z-10   w-full flex items-center justify-center overflow-hidden">
         <div className="flex flex-col gap-3 items-center justify-center overflow-hidden group-even:translate-x-[100%] odd:-translate-x-[80%] opacity-0 scale-0   invisible group-hover:-translate-x-[0%] group-hover:visible group-hover:opacity-100 group-hover:scale-100 duration-700 ease-in-out">
           <h1 className="text-[30px] font-bold">{name}</h1>
+
+          <h1 className="text-[16px] w-full font-bold text-center">
+            {skills?.map((item, index) => (
+              <span>{`${item} ${index !== skills.length - 1 ? " - " : ""}`}</span>
+            ))}
+          </h1>
+
           <p className="text-center text-[20px] font-medium ">{description}</p>
           <Link
             to={url}

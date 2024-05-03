@@ -10,11 +10,14 @@ const Works = () => {
       name: "Billit",
       description:
         " A web app for generating invoices with real tim preview and possibility to download to pdf",
+
+      skills: ["ReactJS", "Typescript"],
       url: "https://billit-six.vercel.app",
       photo: billit,
     },
     {
       name: "AgroRéseau",
+      skills: ["ReactJS", "TailwindCSS", "NodeJS", "Express"],
       description:
         "Une plateforme de mise en relation des producteurs agro-pastorauxavec des potentiels acheteurs",
       url: "",
@@ -22,12 +25,14 @@ const Works = () => {
     },
     {
       name: "Digital School Dashboard",
+      skills: ["ReactJS", "TailwindCSS", "NodeJS", "Express"],
       description: "A web app to help the director manage his training center",
       url: "",
       photo: digital_school_dashboard,
     },
     {
       name: "Flexing Academy",
+      skills: ["ReactJS", "TailwindCSS"],
       description: "A website for a home classes agency",
       url: "https://flexingacademy.com",
       photo: flexing_academy,
@@ -35,6 +40,7 @@ const Works = () => {
 
     {
       name: "Doctor ",
+      skills: ["ReactJS", "TailwindCSS"],
       description: "A landing page for a doctor",
       url: "https://figma-to-code-challenge-week1-assaf.vercel.app/",
       photo: doctor,
@@ -56,6 +62,7 @@ const Works = () => {
           <ProjectCard
             key={index}
             name={item.name}
+            skills={item.skills}
             description={item.description}
             url={item.url}
             photo={item.photo}

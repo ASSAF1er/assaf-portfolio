@@ -3,7 +3,7 @@ import profile from "@assets/profile.png";
 
 function Hero() {
   return (
-    <section className=" text-primary bg-gray w-full h-screen  flex justify-between  items-center py-8 px-[20px] md:px-[50px] xl:px-[100px] font-ojuju">
+    <section className=" text-primary bg-gray w-full h-screen  flex justify-between  items-center py-8  md:px-[50px] xl:px-[100px] font-ojuju">
       <div className="font-normal">
         <p className="relative text-[50px] leading-[60px] ">
           Hi, i'm <span className="font-bold">Beral ASSONFACK</span>
