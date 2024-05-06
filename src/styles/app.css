@@ -86,9 +86,26 @@
     transform: translate(200px, 200px) rotate(45deg);
   }
 }
+@keyframes walkingBtn {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: translate(0, -10px) rotate(15deg);
+  }
+  66% {
+    transform: translate(0, -10px) rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .skill-card:hover .brillance-effect {
   animation: brillanceEffect 1s linear;
 }
 .project-card:hover .brillance-effect {
   animation: brillanceEffect 1.5s linear 1s;
+}
+.walking-btn {
+  animation: walkingBtn 2s ease-in-out infinite alternate;
 }

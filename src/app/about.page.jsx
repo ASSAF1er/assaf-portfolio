@@ -101,7 +101,10 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className=" w-full flex flex-col gap-5   text-primary text-[20px]  font-bold">
+      <section
+        id="skills"
+        className=" w-full flex flex-col gap-5   text-primary text-[20px]  font-bold"
+      >
         <h1 className="font-bold text-[40px] text-left ">Skills</h1>
         <div className=" text-[30px] underline mt-5">Frontend</div>
         <div className="flex gap-2 flex-wrap ">
