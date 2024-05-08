@@ -22,6 +22,8 @@ const Contact = () => {
       url: "https://www.linkedin.com/in/beral-assonfack-5a462727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ];
+  if (typeof window !== "undefined") document.documentElement.scrollTop = 0;
+
   return (
     <section className="bg-gray px-[10%] ">
       <div className=" w-full h-screen flex flex-col items-center justify-center ">

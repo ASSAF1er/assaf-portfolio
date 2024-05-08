@@ -12,20 +12,20 @@ function Tabbar() {
   const location = useLocation();
   const [scroll, setScroll] = useState(false);
   const handleNavbarStyle = () => {
-    if (window.scrollY > 20) {
+    if (window?.scrollY > 20) {
       setScroll(true);
     } else {
       setScroll(false);
     }
   };
-  // if (window !== undefined) {
-  //   window.addEventListener("scroll", handleNavbarStyle);
-  // }
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", handleNavbarStyle);
+  }
 
   return (
     <section
       className={classNames(
-        scroll ? "backdrop-sepia-0 bg-white/30" : "",
+        scroll ? "backdrop-sepia-0 bg-white/30 backdrop-blur-sm" : "",
         "fixed top-0 z-[100]  py-4 flex justify-center w-full",
       )}
     >

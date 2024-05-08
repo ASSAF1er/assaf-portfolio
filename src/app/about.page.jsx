@@ -46,6 +46,7 @@ const About = () => {
   //     item.classList.add("w-[300px]");
   //   });
   // });
+  if (typeof window !== "undefined") document.documentElement.scrollTop = 0;
 
   return (
     <section className="bg-gray font-ojuju px-[10%]">

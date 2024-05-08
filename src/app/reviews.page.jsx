@@ -3,6 +3,8 @@ import Image from "@rasenganjs/image";
 import Hero from "@/components/Hero";
 
 const Reviews = () => {
+  if (typeof window !== "undefined") document.documentElement.scrollTop = 0;
+
   return (
     <section className="bg-gray px-[10%] ">
       <div className=" w-full flex flex-col items-center justify-center text-primary ">
