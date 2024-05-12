@@ -27,7 +27,7 @@ html {
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: #1e1b18 #d4dcdd;
+  scrollbar-color: hsl(30, 11%, 11%) #d4dcdd;
 }
 ::-moz-scrollbar {
   background-color: rgba(255, 255, 255, 0.5);
@@ -35,9 +35,11 @@ html {
 }
 ::-moz-scrollbar-thumb {
   background-color: #1e1b18;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #1e1b18;
+  border-radius: 5px;
 }
 ::-webkit-scrollbar-track {
   background-color: rgba(255, 255, 255, 0.5);

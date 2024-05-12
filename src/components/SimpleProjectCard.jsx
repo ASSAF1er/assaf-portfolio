@@ -7,7 +7,7 @@ function SimpleProjectCard({ photo, name, skills, url, description }) {
         alt=""
         className="w-full h-full rounded-md object-cover  hover:scale-[1.1] overflow-hidden duration-300"
       />
-      <div className="absolute h-full top-[100%] group-hover:top-0  z-10   w-full flex items-center justify-center overflow-hidden backdrop-sepia  bg-white/80">
+      <div className="absolute h-full top-[100%] group-hover:top-0  z-10   w-full flex items-center justify-center px-3 overflow-hidden backdrop-sepia  bg-white/80 duration-500">
         <div className="flex flex-col gap-3 items-center justify-center overflow-hidden group-even:translate-x-[100%] odd:-translate-x-[80%] opacity-0 scale-0   invisible group-hover:-translate-x-[0%] group-hover:visible group-hover:opacity-100 group-hover:scale-100 duration-700 ease-in-out">
           <h1 className="text-[30px] text-center font-bold">{name}</h1>
 

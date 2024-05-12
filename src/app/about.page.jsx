@@ -32,7 +32,6 @@ const About = () => {
   const skillsDeployment = [
     { name: "Git & GitHub", photo: github },
     { name: "Vercel", photo: vercel },
-    { name: "", photo: "" },
   ];
 
   // const items = document?.querySelectorAll(".about-image");

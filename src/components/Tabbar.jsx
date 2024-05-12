@@ -26,7 +26,7 @@ function Tabbar() {
     <section
       className={classNames(
         scroll ? "backdrop-sepia-0 bg-white/30 backdrop-blur-sm" : "",
-        "fixed top-0 z-[100]  py-4 flex justify-center w-full",
+        "fixed top-0 z-[100] bg-transparent  py-4 flex justify-center w-full duration-500",
       )}
     >
       <div className="flex bg-primary gap-2 py-4 px-6 rounded-md text-white font-ojuju font-medium text-[17px]">
