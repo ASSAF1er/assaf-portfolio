@@ -12,21 +12,26 @@ function Tabbar() {
   const location = useLocation();
   const [scroll, setScroll] = useState(false);
   const handleNavbarStyle = () => {
-    if (window?.scrollY > 20) {
+    if (window.scrollY > 20) {
       setScroll(true);
     } else {
       setScroll(false);
     }
   };
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", handleNavbarStyle);
-  }
+  // if (window !== undefined) {
+  //   window.addEventListener("scroll", handleNavbarStyle);
+  // }
 
   return (
     <section
       className={classNames(
+<<<<<<< HEAD
         scroll ? "backdrop-sepia-0 bg-white/30 backdrop-blur-sm" : "",
         "fixed top-0 z-[100] bg-transparent  py-4 flex justify-center w-full duration-500",
+=======
+        scroll ? "backdrop-sepia-0 bg-white/30" : "",
+        "fixed top-0 z-[100]  py-4 flex justify-center w-full",
+>>>>>>> parent of 5fd0e52... added backdrop to tabbar and manipulating window object when available
       )}
     >
       <div className="flex bg-primary gap-2 py-4 px-6 rounded-md text-white font-ojuju font-medium text-[17px]">

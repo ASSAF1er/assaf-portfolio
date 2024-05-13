@@ -46,8 +46,6 @@ const Works = () => {
       photo: doctor,
     },
   ];
-  if (typeof window !== "undefined") document.documentElement.scrollTop = 0;
-
   return (
     <section className="bg-gray px-[10%] ">
       <div className="h-screen w-full flex items-center justify-center text-primary text-[60px] font-ojuju font-bold">

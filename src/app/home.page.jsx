@@ -64,7 +64,6 @@ const Home = () => {
     //   photo: doctor,
     // },
   ];
-  if (typeof window !== "undefined") document.documentElement.scrollTop = 0;
   return (
     <section className="">
       <Hero />
