@@ -64,10 +64,11 @@ const Home = () => {
     //   photo: doctor,
     // },
   ];
+  if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
   return (
     <section className="">
       <Hero />
-      <section className="px-[10%] ">
+      <section className=" px-[5%] md:px-[10%] ">
         <section className=" w-full flex flex-col gap-5   text-primary text-[20px]  font-bold">
           <div className="pt-20 pb-20 w-auto text-primary text-[60px] font-ojuju font-bold">
             <h1 className="relative">

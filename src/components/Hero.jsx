@@ -3,21 +3,21 @@ import profile from "@assets/profile.png";
 
 function Hero() {
   return (
-    <section className=" text-primary bg-gray w-full md:h-screen  flex flex-col  sm:flex-row justify-between  items-center py-8  md:px-[50px] xl:px-[100px] font-ojuju">
+    <section className=" text-primary bg-gray w-full  md:h-screen  flex flex-col-reverse  sm:flex-row gap-8 md:justify-between  items-center md:py-8 py-32 px-[5%] md:px-[50px] xl:px-[100px] font-ojuju">
       <div className="font-normal">
-        <p className="relative text-[50px] leading-[60px] ">
+        <p className="relative text-[30px] md:text-[50px] leading-[40px] md:leading-[60px] ">
           Hi, i'm <span className="font-bold">Beral ASSONFACK</span>
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
-        <p className="relative text-[50px] leading-[60px]">
+        <p className="relative text-[30px] md:text-[50px] leading-[40px] md:leading-[60px] ">
           You can call me <span className="font-bold">Assaf</span>
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
-        <p className=" relative text-[25px] mt-3 ">
+        <p className=" relative text-[20px] md:text-[25px] leading-[25px] md:leading-[30px]  mt-3 ">
           Web Developer / Frontend specialist
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
-        <div className="flex mt-5">
+        <div className="flex mt-8 md:mt-5">
           <div className="group relative w-[200px]  h-[52px] bg-primary rounded-md  text-white font-medium cursor-pointer overflow-hidden">
             <ul className="absolute w-full left-1/2 top-0 group-hover:top-[-52px] ease-in duration-[300ms] -translate-x-1/2 text-[20px] leadings-[20px] ">
               <li className="relative flex items-center justify-center text-center h-[52px]">
@@ -36,9 +36,7 @@ function Hero() {
         <Image
           src={profile}
           alt="profile picture"
-          width={350}
-          height={350}
-          className="object-cover   grayscale "
+          className="object-cover !size-[290px] md:!size-[350px] grayscale "
         />
       </div>
     </section>

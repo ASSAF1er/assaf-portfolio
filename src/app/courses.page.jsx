@@ -1,8 +1,17 @@
 import CourseCard from "@/components/CourseCard";
+import { courses } from "./data";
 function Courses() {
   return (
-    <section className="flex gap-5 justify-center p-5">
-      <CourseCard />
+    <section className="flex gap-5 justify-center py-[10%] flex-wrap px-5">
+      {courses?.map((item, index) => (
+        <CourseCard
+          title={item.title}
+          category={item.categorie}
+          image={item.image}
+          duration={item.duration}
+          chapters={item.chapters}
+        />
+      ))}
     </section>
   );
 }
