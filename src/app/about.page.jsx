@@ -33,6 +33,7 @@ const About = () => {
     { name: "Git & GitHub", photo: github },
     { name: "Vercel", photo: vercel },
   ];
+  const galery = [profile1, profile2, profile3, profile4];
 
   // const items = document?.querySelectorAll(".about-image");
 
@@ -48,8 +49,8 @@ const About = () => {
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
 
   return (
-    <section className="bg-gray font-ojuju px-[10%]">
-      <div className="h-screen w-full flex items-center justify-center text-primary text-[60px]  font-bold">
+    <section className="bg-gray font-ojuju px-[5%] md:px-[10%]">
+      <div className="h-screen w-full flex items-center justify-center text-primary text-[40px] md:text-[60px]  font-bold">
         <div>
           <h1 className="relative">
             About me
@@ -59,10 +60,10 @@ const About = () => {
         </div>
       </div>
       {/*presentation */}
-      <section className="flex flex-col py-32 w-full h-auto ">
-        <h3 className="font-bold text-[60px] ">I am,</h3>
-        <div className="flex gap-5 h-full">
-          <div className="flex flex-1 font-medium text-[20px] ">
+      <section className="flex flex-col py-10 md:py-32 w-full h-auto ">
+        <h3 className="font-bold text-[40px] mdtext-[60px] ">I am,</h3>
+        <div className="flex flex-col md:flex-row items-center gap-5 h-full">
+          <div className="flex flex-1 font-medium text-[18px] md:text-[20px] ">
             Beral ASSONFACK, a web developer passionate about crafting beautiful
             and flawless websites. With a keen eye for detail and a commitment
             to precision, I specialize in creating designs that are not only
@@ -77,27 +78,14 @@ const About = () => {
             frameworks like Node.js and databases like MongoDB, I thrive on the
             challenges of building robust and scalable web applications.
           </div>
-          <div className="group flex  h-[350px] gap-2 ">
-            <img
-              src={profile1}
-              alt="profile"
-              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10   duration-500 ease-in-out"
-            />
-            <img
-              src={profile2}
-              alt="profile"
-              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
-            />
-            <img
-              src={profile3}
-              alt="profile"
-              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
-            />
-            <img
-              src={profile4}
-              alt="profile"
-              className="about-image h-full object-cover grayscale rounded-xl hover:w-[300px] w-10  duration-500 ease-in-out"
-            />
+          <div className="group flex h-[250px] md:h-[350px] gap-2 ">
+            {galery?.map((item) => (
+              <img
+                src={item}
+                alt="profile"
+                className="about-image h-full object-cover grayscale rounded-xl hover:w-[200px] md:hover:w-[300px] w-10   duration-500 ease-in-out"
+              />
+            ))}
           </div>
         </div>
       </section>
@@ -107,7 +95,7 @@ const About = () => {
       >
         <h1 className="font-bold text-[40px] text-left ">Skills</h1>
         <div className=" text-[30px] underline mt-5">Frontend</div>
-        <div className="flex gap-2 flex-wrap ">
+        <div className="flex gap-1 flex-wrap ">
           {skillsFrontend?.map((item, index) => (
             <SkillCard key={index} logo={item.photo} name={item.name} />
           ))}
@@ -126,24 +114,28 @@ const About = () => {
             <SkillCard key={index} logo={item.photo} name={item.name} />
           ))}
         </div>
-        <div className="h-screen w-full flex items-center justify-end ">
-          <div className=" w-[70%]">
+        <div className="h-screen w-full flex items-center justify-center md:justify-end ">
+          <div className="w-full md:w-[70%]">
             {" "}
-            <h1 className="relative text-[45px] ">
+            <h1 className="relative text-[35px] md:text-[45px] ">
               Experiences
               <div className="absolute top-0 text-cover w-full bg-gray "></div>
             </h1>
             <div className="min-h-2 title-underline w-[200px] bg-primary"></div>
             <div className="mt-10 group flex flex-col w-full cursor-pointer">
-              <h2 className="text-[30px]  ">Frontend Developper - Intern</h2>
-              <div className="flex justify-between font-medium text-[20px] ">
+              <h2 className="text-[20px] md:text-[30px]  ">
+                Frontend Developper - Intern
+              </h2>
+              <div className="flex justify-between font-medium text-[14AZpx] md:text-[20px] ">
                 <h3>
                   <span className=" no-underline group-hover:underline font-medium hover:font-bold  duration-500">
                     FreemoPay
                   </span>
                   , Yaoundé Cameroon
                 </h3>{" "}
-                <h3 className="text-[17px] ">April 2024 - Present</h3>
+                <h3 className="text-[14px] md:text-[17px] ">
+                  April 2024 - Present
+                </h3>
               </div>
               <h3 className="font-medium text-[15px] mt-5">
                 ReactJS - TypeScript - Redux - TailwindCSS{" "}

@@ -1,8 +1,8 @@
 function Message() {
   return (
-    <section className="flex w-full  justify-end">
-      <div className="flex flex-col w-[60%]">
-        <div className="pt-20 pb-10  text-primary text-[60px] font-ojuju font-bold">
+    <section className="flex w-full  justify-center md:justify-end">
+      <div className="flex flex-col md:w-[60%]">
+        <div className="pt-20 pb-10  text-primary text-[40px] md:text-[60px] font-ojuju font-bold">
           <h1 className="relative">
             Leave a message
             <div className="absolute top-0 text-cover w-full bg-gray "></div>
@@ -11,34 +11,44 @@ function Message() {
         </div>
         <form action="" className="flex flex-col gap-3 ">
           <div className="flex flex-col">
-            <label htmlFor="name" className="font-bold text-[22px] ">
+            <label
+              htmlFor="name"
+              className="font-bold text-[18px] md:text-[22px] "
+            >
               Name / Pseudo *
             </label>
             <input
               type="text"
               placeholder="assaf"
-              className="px-3 py-2 bg-gray border border-gray-400 rounded-md text-[18px] font-medium focus:outline-none focus:border-primary"
+              className="px-3 py-2  bg-gray border border-gray-400 rounded-md text-[17px] md:text-[18px] font-medium focus:outline-none focus:border-primary"
             />
           </div>
           <div className="flex flex-col">
-            <label htmlFor="name" className="font-bold text-[22px] ">
+            <label
+              htmlFor="name"
+              className="font-bold text-[18px] md:text-[22px] "
+            >
               E-mail *
             </label>
             <input
               type="email"
               placeholder="beral.assaf@gmail.com"
-              className="px-3 py-2 bg-gray border border-gray-400 rounded-md text-[18px] font-medium focus:outline-none focus:border-primary"
+              className="px-3 py-2 bg-gray border border-gray-400 rounded-md text-[17px] md:text-[18px] font-medium focus:outline-none focus:border-primary"
             />
           </div>
 
           <div className="flex flex-col">
-            <label htmlFor="name" className="font-bold text-[22px] ">
+            <label
+              htmlFor="name"
+              className="font-bold text-[18px] md:text-[22px]"
+            >
               Message *
             </label>
             <textarea
               type="text"
+              rows={3}
               placeholder="Hello, ..."
-              className="px-3 py-2 bg-gray border border-gray-400 rounded-md text-[18px] font-medium focus:outline-none focus:border-primary"
+              className="px-3 py-2 bg-gray border border-gray-400 rounded-md text-[17px] md:text-[18px] font-medium focus:outline-none focus:border-primary"
             />
           </div>
           <button className="py-3 bg-primary hover:bg-gray-400 text-[18px] text-gray-100 font-bold rounded-md">

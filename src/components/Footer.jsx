@@ -6,10 +6,10 @@ import rasengan_logo from "@assets/rasengan-logo-text-black.svg";
 import { Link } from "rasengan";
 function Footer() {
   return (
-    <footer className="py-10 px-5  bg-gray text-primary ">
-      <ul className="flex justify-between items-center px-[5%] border-t pt-10 border-dotted border-t-primary font-ojuju font-medium">
+    <footer className=" py-6 md:py-10 px-5  bg-gray text-primary ">
+      <ul className="flex flex-col md:flex-row md:justify-between items-center gap-4 px-[5%] border-t pt-10 border-dotted border-t-primary font-ojuju font-medium">
         <li>
-          <ul className="flex gap-2 items-center">
+          <ul className="flex gap-3 items-center">
             <li>
               <Link to="https://github.com/ASSAF1er/">
                 <Image
@@ -43,9 +43,9 @@ function Footer() {
                 />
               </Link>
             </li>
-            <li className="ml-2">Beral ASSONFACK © 2024</li>
           </ul>
-        </li>{" "}
+        </li>
+        <li className="ml-2">Beral ASSONFACK © 2024</li>
         <li>
           Built with{" "}
           <Link to="https://www.beta.rasengan.dev/">

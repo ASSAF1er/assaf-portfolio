@@ -66,11 +66,11 @@ const Home = () => {
   ];
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
   return (
-    <section className="">
+    <section className="mb-5">
       <Hero />
       <section className=" px-[5%] md:px-[10%] ">
         <section className=" w-full flex flex-col gap-5   text-primary text-[20px]  font-bold">
-          <div className="pt-20 pb-20 w-auto text-primary text-[60px] font-ojuju font-bold">
+          <div className="py-10 md:py-20 w-auto text-primary text-[40px] md:text-[60px] font-ojuju font-bold">
             <h1 className="relative">
               Skills
               <div className="absolute top-0 text-cover w-full bg-gray "></div>
@@ -88,7 +88,7 @@ const Home = () => {
           </div>
         </section>
         <section className=" w-full flex flex-col gap-5   text-primary text-[20px]  font-bold">
-          <div className="pt-20 pb-20 w-auto text-primary text-[60px] font-ojuju font-bold">
+          <div className="pt-24 pb-14 md:py-20 w-auto text-primary text-[40px] md:text-[60px] font-ojuju font-bold">
             <h1 className="relative">
               Projects
               <div className="absolute top-0 text-cover w-full bg-gray "></div>
