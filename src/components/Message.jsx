@@ -51,7 +51,7 @@ function Message() {
               className="px-3 py-2 bg-gray border border-gray-400 rounded-md text-[17px] md:text-[18px] font-medium focus:outline-none focus:border-primary"
             />
           </div>
-          <button className="py-3 bg-primary hover:bg-gray-400 text-[18px] text-gray-100 font-bold rounded-md">
+          <button className="py-3 mt-2 bg-primary hover:bg-gray-400 text-[18px] text-gray-100 font-bold rounded-md shadow-md hover:shadow-sm">
             Submit
           </button>
         </form>

@@ -10,7 +10,7 @@ function ProjectCard({ name, skills, description, url, photo }) {
           alt="agroreseau"
           height={400}
           width={450}
-          className="rounded-md object-cover bg-primary"
+          className="rounded-md !w-[450px] !h-[400px] object-cover bg-primary"
         />
       </div>
       <div className="z-10   w-full flex items-center justify-center overflow-hidden">

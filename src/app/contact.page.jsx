@@ -24,9 +24,9 @@ const Contact = () => {
   ];
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
   return (
-    <section className="bg-gray px-[10%] ">
-      <div className=" w-full h-screen flex flex-col items-center justify-center ">
-        <div className="pt-20 p-20 text-primary text-[60px] font-ojuju font-bold">
+    <section className="bg-gray px-[5%] md:px-[10%] ">
+      <div className=" w-full h-screen flex flex-col items-center justify-center mb-32 md:mb-0 ">
+        <div className=" mt-60 md:mt-0 mb-20 md:mb-20 text-primary text-[40px] md:text-[60px] font-ojuju font-bold">
           <h1 className="relative">
             Let's get in touch
             <div className="absolute top-0 text-cover w-full bg-gray "></div>
@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="min-h-2 title-underline w-[70%] bg-primary"></div>
         </div>
 
-        <div className="flex gap-5">
+        <div className="flex flex-col md:flex-row items-center md:justify-center gap-5">
           <Link
             to="mailto:beral.assaf@gmail.com"
             className="flex gap-3 px-4 h-[100px] w-[280px]  bg-primary rounded-md shadow-xl hover:shadow-sm"

@@ -20,7 +20,7 @@ const Home = () => {
     { name: "RasenganJS", photo: rasengan },
     { name: "ReactJS", photo: react },
     { name: "TypeScript", photo: typescript },
-    { name: "Redux", photo: redux },
+
     { name: "NodeJS", photo: nodejs },
   ];
   const projects = [
@@ -78,13 +78,13 @@ const Home = () => {
             <div className="min-h-2  w-[100px] bg-primary"></div>
           </div>
 
-          <div className="flex gap-2 flex-wrap ">
+          <div className="flex justify-center  gap-2 flex-wrap ">
             {skills.map((item, index) => (
               <SkillCard key={index} logo={item.photo} name={item.name} />
             ))}
-            <div className=" flex justify-center items-center py-2 pl-10 ">
-              <ViewMoreBtn url={"/about/#skills"} />
-            </div>
+          </div>
+          <div className=" flex justify-center items-center py-2 md:pl-10 ">
+            <ViewMoreBtn url={"/about/#skills"} />
           </div>
         </section>
         <section className=" w-full flex flex-col gap-5   text-primary text-[20px]  font-bold">
@@ -108,7 +108,7 @@ const Home = () => {
               />
             ))}{" "}
           </div>
-          <div className=" flex justify-center py-2 ">
+          <div className=" flex justify-center  py-2 ">
             <ViewMoreBtn url={"/works"} />
           </div>
         </section>

@@ -4,6 +4,7 @@ import billit from "@assets/billit.png";
 import digital_school_dashboard from "@assets/digital-school-dashboard.jpg";
 import doctor from "@assets/doctor.jpg";
 import flexing_academy from "@assets/flexing-academy.jpg";
+import SimpleProjectCard from "@/components/SimpleProjectCard";
 const Works = () => {
   const projects = [
     {
@@ -48,7 +49,7 @@ const Works = () => {
   ];
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
   return (
-    <section className="bg-gray px-[10%] ">
+    <section className="bg-gray px-[5%] md:px-[10%] ">
       <div className="h-screen w-full flex items-center justify-center text-primary text-[60px] font-ojuju font-bold">
         <div>
           <h1 className="relative">
@@ -58,7 +59,8 @@ const Works = () => {
           <div className="min-h-2 title-underline w-[70%] bg-primary"></div>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-10">
+      {/*for large screens*/}
+      <div className="hidden md:flex flex-col w-full gap-10">
         {projects?.map((item, index) => (
           <ProjectCard
             key={index}
@@ -67,6 +69,19 @@ const Works = () => {
             description={item.description}
             url={item.url}
             photo={item.photo}
+          />
+        ))}
+      </div>
+      {/*for small screens */}
+      <div className=" md:hidden flex flex-col items-center w-full gap-10">
+        {projects.map((item, index) => (
+          <SimpleProjectCard
+            key={index}
+            photo={item.photo}
+            name={item.name}
+            skills={item.skills}
+            url={item.url}
+            description={item.description}
           />
         ))}
       </div>

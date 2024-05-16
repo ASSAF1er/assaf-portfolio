@@ -3,6 +3,7 @@ import { Link } from "rasengan";
 import { useLocation } from "rasengan";
 import { useState } from "react";
 import profile from "@assets/profile.png";
+import MenuBurger from "./MenuBurger";
 function Tabbar() {
   const routes = [
     { name: "Home", path: "/" },
@@ -38,9 +39,7 @@ function Tabbar() {
         )}
       >
         <div className="flex py-3  justify-between my-auto items-center w-full">
-          <span onClick={() => setOpenMobileNav((prev) => !prev)}>
-            {openMobileNav ? "close" : "menu"}
-          </span>
+          <MenuBurger open={openMobileNav} setOpen={setOpenMobileNav} />
           <img
             src={profile}
             alt=""
@@ -87,6 +86,7 @@ function Tabbar() {
           </Link>
         </div>
       </div>
+      {/*menu for large screens */}
       <div className=" hidden sm:flex bg-primary gap-2 py-2 sm:py-4  px-2 sm:px-6 rounded-md text-white font-ojuju font-medium text-[14px] sm:text-[17px]">
         {routes?.map((item, index) => (
           <Link
