@@ -24,7 +24,7 @@ const Contact = () => {
   ];
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
   return (
-    <section className="bg-gray px-[5%] md:px-[10%] ">
+    <section className="z-10 bg-gray px-[5%] md:px-[10%] ">
       <div className=" w-full h-screen flex flex-col items-center justify-center mb-32 md:mb-0 ">
         <div className=" mt-60 md:mt-0 mb-20 md:mb-20 text-primary text-[40px] md:text-[60px] font-ojuju font-bold">
           <h1 className="relative">
@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row items-center md:justify-center gap-5">
           <Link
             to="mailto:beral.assaf@gmail.com"
-            className="flex gap-3 px-4 h-[100px] w-[280px]  bg-primary rounded-md shadow-xl hover:shadow-sm"
+            className="z-10 flex gap-3 px-4 h-[100px] w-[280px]  bg-primary rounded-md shadow-xl hover:shadow-sm"
           >
             <div className="flex items-center justify-center rounded-full">
               <Image

@@ -1,7 +1,7 @@
 import Image from "@rasenganjs/image";
 function SkillCard({ logo, name }) {
   return (
-    <div className="flex flex-col items-center grayscale hover:grayscale-0 justify-center   relative skill-card group size-[150px] overflow-hidden rounded-md bg-primary    md:hover:-translate-y-[15px] transition duration-300 ease-in-out text-white hover:shadow-md cursor-pointer">
+    <div id="skill" className="flex flex-col items-center grayscale hover:grayscale-0 justify-center   relative skill-card group size-[150px] overflow-hidden rounded-md bg-primary    md:hover:-translate-y-[15px] transition duration-300 ease-in-out text-white hover:shadow-md cursor-pointer">
       <Image
         src={logo}
         alt="logo"

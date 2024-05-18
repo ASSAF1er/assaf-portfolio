@@ -29,7 +29,7 @@ function Tabbar() {
     <section
       className={classNames(
         scroll ? "backdrop-sepia-0 bg-white/30 backdrop-blur-md" : "",
-        "fixed top-0 z-[100] bg-transparent  py-4  flex justify-center w-full duration-500",
+        "fixed top-0 z-[90] bg-transparent  py-4  flex justify-center w-full duration-500",
       )}
     >
       <div

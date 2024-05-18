@@ -27,7 +27,7 @@ const Home = () => {
     {
       name: "Billit",
       description:
-        " A web app for generating invoices with real tim preview and possibility to download to pdf",
+        " A web app for generating invoices with real time preview and possibility to download to pdf",
 
       skills: ["ReactJS", "Typescript"],
       url: "https://billit-six.vercel.app",
@@ -37,7 +37,7 @@ const Home = () => {
       name: "AgroRéseau",
       skills: ["ReactJS", "TailwindCSS", "NodeJS", "Express"],
       description:
-        "Une plateforme de mise en relation des producteurs agro-pastorauxavec des potentiels acheteurs",
+        "A platform connecting agro-pastoral producers with potential buyers",
       url: "",
       photo: agroreseau,
     },
@@ -66,7 +66,7 @@ const Home = () => {
   ];
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
   return (
-    <section className="mb-5">
+    <section className="z-10 mb-5">
       <Hero />
       <section className=" px-[5%] md:px-[10%] ">
         <section className=" w-full flex flex-col gap-5   text-primary text-[20px]  font-bold">

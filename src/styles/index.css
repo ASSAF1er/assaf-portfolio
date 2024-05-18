@@ -21,6 +21,10 @@ html {
   overflow-x: hidden;
   background-color: #d4dcdd;
   font-family: "Ojuju", "sans-serif";
+  cursor: none !important;
+}
+a {
+  cursor: none;
 }
 * {
   scroll-behavior: smooth;

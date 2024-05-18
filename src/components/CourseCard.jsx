@@ -2,7 +2,10 @@ import js_icon from "@/assets/javascript.svg";
 import { Link } from "rasengan";
 function CourseCard({ title, category, duration, chapters, image }) {
   return (
-    <div className="group flex flex-col gap-2 p-2 w-[250px] rounded-md bg-[#f5f5f4] border border-[#cbd5e1] overflow-hidden shadow-sm">
+    <div
+      id="skill"
+      className="group flex flex-col gap-2 p-2 w-[250px] rounded-md bg-[#f5f5f4] border border-[#cbd5e1] overflow-hidden shadow-sm"
+    >
       <div className=" h-[150px] w-full rounded-md overflow-hidden">
         <img
           src={image}

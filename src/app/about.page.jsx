@@ -15,6 +15,7 @@ import Image from "@rasenganjs/image";
 import profile2 from "@assets/profile2.jpeg";
 import profile3 from "@assets/profile3.jpeg";
 import profile4 from "@assets/profile4.jpeg";
+import { Link } from "rasengan";
 const About = () => {
   const skillsFrontend = [
     { name: "RasenganJS", photo: rasengan },
@@ -39,8 +40,8 @@ const About = () => {
     {
       position: "Frontend Developer - Intern",
       date: "April 2024 - Present",
-      enterpriseName: "FremoPay",
-      enterpriseUrlrl: "",
+      enterpriseName: "FreemoPay",
+      enterpriseUrl: "https://www.freemopay.com/",
       enterpriseLocation: "Yaoundé, Cameroon",
       stack: ["ReactJS", " TypeScript ", "Redux ", "TailwindCSS"],
     },
@@ -48,7 +49,7 @@ const About = () => {
       position: "Web Developer - Intern",
       enterpriseName: "SEED Soft Engine",
       date: "Jully 2023 - September 2023",
-      enterpriseUrlrl: "",
+      enterpriseUrl: "https://softengine.seeds.cm/",
       enterpriseLocation: " Yaoundé Cameroon",
       stack: ["ReactJS", "NodeJS", "Express", "MongoDB"],
     },
@@ -68,7 +69,7 @@ const About = () => {
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
 
   return (
-    <section className="bg-gray font-ojuju px-[5%] md:px-[10%]">
+    <section className=" bg-gray font-ojuju px-[5%] md:px-[10%]">
       <div className="h-screen w-full flex items-center justify-center text-primary text-[40px] md:text-[60px]  font-bold">
         <div>
           <h1 className="relative">
@@ -101,9 +102,10 @@ const About = () => {
               the challenges of building robust and scalable web applications.
             </p>
           </div>
-          <div className="group flex justify-center w-full md:w-auto h-[250px] md:h-[350px] md:mt-5 gap-2 ">
+          <div className="group flex justify-center w-full md:w-auto h-[250px] md:h-[350px] md:mt-16 gap-2 ">
             {galery?.map((item, index) => (
               <img
+                id="about-image"
                 key={index}
                 src={item}
                 alt="profile"
@@ -156,9 +158,12 @@ const About = () => {
                 </h2>
                 <div className="flex flex-col md:flex-row gap-1 justify-between font-medium text-[18px] md:text-[20px] ">
                   <h3 className="">
-                    <span className="underline font-medium hover:font-bold  duration-500">
+                    <Link
+                      to={item.enterpriseUrl}
+                      className="z-10 underline font-medium hover:font-bold  duration-500"
+                    >
                       {item.enterpriseName}
-                    </span>
+                    </Link>
                     , {item.enterpriseLocation}
                   </h3>{" "}
                   <h3 className="text-[15px] md:text-[17px] ">{item.date}</h3>

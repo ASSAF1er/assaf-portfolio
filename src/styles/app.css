@@ -70,6 +70,10 @@
   ); /* Gradient radial pour la lumière */
 }
 
+.link-hover {
+  background-color: orange;
+}
+
 @keyframes moveLight {
   0% {
     transform: translate(-50px, -50px);

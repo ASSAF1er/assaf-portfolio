@@ -10,7 +10,7 @@ const Works = () => {
     {
       name: "Billit",
       description:
-        " A web app for generating invoices with real tim preview and possibility to download to pdf",
+        " A web app for generating invoices with real time preview and possibility to download to pdf",
 
       skills: ["ReactJS", "Typescript"],
       url: "https://billit-six.vercel.app",
@@ -20,7 +20,7 @@ const Works = () => {
       name: "AgroRéseau",
       skills: ["ReactJS", "TailwindCSS", "NodeJS", "Express"],
       description:
-        "Une plateforme de mise en relation des producteurs agro-pastorauxavec des potentiels acheteurs",
+        "A platform connecting agro-pastoral producers with potential buyers",
       url: "",
       photo: agroreseau,
     },
@@ -49,7 +49,7 @@ const Works = () => {
   ];
   if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
   return (
-    <section className="bg-gray px-[5%] md:px-[10%] ">
+    <section className=" z-10 bg-gray px-[5%] md:px-[10%] ">
       <div className="h-screen w-full flex items-center justify-center text-primary text-[60px] font-ojuju font-bold">
         <div>
           <h1 className="relative">
