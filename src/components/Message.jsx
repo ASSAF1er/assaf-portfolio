@@ -47,7 +47,7 @@ function Message() {
         </div>
         <form
           action=""
-          onSubmit={(e) => handleSubmit(e)}
+          onSubmit={(e) =>!isLoading&& handleSubmit(e)}
           className="flex flex-col gap-3 "
         >
           <div className="flex flex-col">
@@ -125,7 +125,7 @@ function Message() {
             type="submit"
             className="py-3 mt-2 bg-primary hover:bg-gray-400 text-[18px] text-gray-100 font-bold rounded-md shadow-md hover:shadow-sm"
           >
-            Submit
+            {isLoading ? "Loading..." : "Submit"}
           </button>
         </form>
       </div>
