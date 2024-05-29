@@ -5,6 +5,7 @@ import digital_school_dashboard from "@assets/digital-school-dashboard.jpg";
 import doctor from "@assets/doctor.jpg";
 import flexing_academy from "@assets/flexing-academy.jpg";
 import SimpleProjectCard from "@/components/SimpleProjectCard";
+import { useEffect } from "react";
 const Works = () => {
   const projects = [
     {
@@ -47,7 +48,9 @@ const Works = () => {
       photo: doctor,
     },
   ];
-  if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
+  useEffect(() => {
+    if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
+  }, []);
   return (
     <section className=" z-10 bg-gray px-[5%] md:px-[10%] ">
       <div className="h-screen w-full flex items-center justify-center text-primary text-[60px] font-ojuju font-bold">

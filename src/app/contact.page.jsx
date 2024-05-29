@@ -6,6 +6,7 @@ import Image from "@rasenganjs/image";
 import ContactCard from "@/components/ContactCard";
 import { Link } from "rasengan";
 import Message from "@/components/Message";
+import { useEffect } from "react";
 const Contact = () => {
   const contacts = [
     {
@@ -22,8 +23,9 @@ const Contact = () => {
       url: "https://www.linkedin.com/in/beral-assonfack-5a462727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   ];
-  if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
-  return (
+  useEffect(() => {
+    if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
+  }, []);  return (
     <section className="z-10 bg-gray px-[5%] md:px-[10%] ">
       <div className=" w-full h-screen flex flex-col items-center justify-center mb-32 md:mb-0 ">
         <div className=" mt-60 md:mt-0 mb-20 md:mb-20 text-primary text-[40px] md:text-[60px] font-ojuju font-bold">

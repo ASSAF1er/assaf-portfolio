@@ -1,4 +1,5 @@
 import { Link } from "rasengan";
+import ProjectDialog from "./ProjectDialog";
 function SimpleProjectCard({ photo, name, skills, url, description }) {
   return (
     <div className="relative group size-[300px] overflow-hidden rounded-md shadow-md ">
@@ -27,6 +28,7 @@ function SimpleProjectCard({ photo, name, skills, url, description }) {
           </Link>
         </div>
       </div>
+      {/* <ProjectDialog /> */}
     </div>
   );
 }

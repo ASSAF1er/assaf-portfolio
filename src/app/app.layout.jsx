@@ -9,17 +9,13 @@ const AppLayout = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      //setIsLoading(false);
+      setIsLoading(false);
     }, 3000); // 3 secondes de simulation de chargement
-
-    window.addEventListener("load", () => {
-      //   setIsLoading(false);
-    });
   });
   return (
     <React.Fragment>
       <CustomMouse />
-      {/*<Loader />*/}
+      {isLoading && <Loader />}
 
       <Tabbar />
       <Outlet />

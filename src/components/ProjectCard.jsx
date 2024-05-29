@@ -1,6 +1,6 @@
 import Image from "@rasenganjs/image";
 import { Link } from "rasengan";
-import agroreau_preview from "@assets/agroreseau_preview.png";
+import ProjectDialog from "./ProjectDialog";
 function ProjectCard({ name, skills, description, url, photo }) {
   return (
     <div className="z-30 project-card group flex gap-3 flex-row even:flex-row-reverse even:justify-end  grayscale hover:grayscale-0  ">
@@ -33,6 +33,7 @@ function ProjectCard({ name, skills, description, url, photo }) {
           </Link>
         </div>
       </div>
+      {/* <ProjectDialog /> */}
     </div>
   );
 }

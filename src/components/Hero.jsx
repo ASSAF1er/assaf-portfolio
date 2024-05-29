@@ -1,5 +1,6 @@
 import Image from "@rasenganjs/image";
 import profile from "@assets/profile.png";
+import { Link } from "rasengan";
 
 function Hero() {
   return (
@@ -18,7 +19,10 @@ function Hero() {
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
         <div className="flex mt-8 md:mt-5">
-          <div className="group relative w-[200px]  h-[52px] bg-primary rounded-md  text-white font-medium cursor-pointer overflow-hidden">
+          <Link
+            to="#"
+            className="group relative w-[200px]  h-[52px] bg-primary rounded-md  text-white font-medium cursor-pointer overflow-hidden"
+          >
             <ul className="absolute w-full left-1/2 top-0 group-hover:top-[-52px] ease-in duration-[300ms] -translate-x-1/2 text-[20px] leadings-[20px] ">
               <li className="relative flex items-center justify-center text-center h-[52px]">
                 Let's have a talk
@@ -29,7 +33,7 @@ function Hero() {
               </li>
             </ul>
             <div className="absolute light group-hover:hidden size-[300px] top-[-50px] left-[-50px] rounded-[50%] "></div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="hero-img-container border-4 border-primary overflow-hidden ">

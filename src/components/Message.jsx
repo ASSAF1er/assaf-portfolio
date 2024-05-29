@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import { useState } from "react";
 import axios from "axios";
+import Toast from "./Toast";
 
 function Message() {
   const [name, setName] = useState("");
@@ -13,30 +14,59 @@ function Message() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
+  const [showToast, setShowToast] = useState(false);
+  const [toastType, setToastType] = useState("");
+  const [toastTitle, setToastTitle] = useState("");
+  const [toastSubtitle1, setToastSubtitle1] = useState("");
+  const [toastSubtitle2, setToastSubtitle2] = useState("");
+  const displayToast = (type, title, subtitle1, subtitle2) => {
+    setShowToast(true);
+    setToastType(type);
+    setToastTitle(title);
+    setToastSubtitle1(subtitle1);
+    setToastSubtitle2(subtitle2);
+
+    // setTimeout(() => {
+    //   setShowToast(false);
+    // }, 6000);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     setClicked(true);
-    if (name && isEmailValid(email) && message) {
+    if (name && isEmailValid(email) && message && !isLoading) {
       setIsLoading(true);
       axios
         .post(import.meta.env.RASENGAN_MY_EMAIL_API_URL, {
           from: email,
           subject: `Message from Portfolio. Name: ${name}`,
-          message,
+          message: `email: ${email}  ${message}`,
         })
         .then(() => {
           setIsLoading(false);
+          displayToast(
+            "succes",
+            "Thanks!",
+            "Message succesfully sent!",
+            "I will soon reply to you.",
+          );
+          setName("");
+          setEmail("");
+
+          setMessage("");
+          setClicked(false);
           console.log("message succesfully sent");
         })
         .catch(() => {
           setIsLoading(false);
+          displayToast("error", "Uh Oh!", "An error occured!", "Try again");
           console.log("message not sent! An error occcured!");
         });
     }
   };
   return (
-    <section className="flex w-full  justify-center md:justify-end">
+    <section className="relative flex w-full  justify-center md:justify-end">
       <div className="flex flex-col md:w-[60%]">
         <div className="pt-20 pb-10  text-primary text-[40px] md:text-[60px] font-ojuju font-bold">
           <h1 className="relative">
@@ -47,7 +77,7 @@ function Message() {
         </div>
         <form
           action=""
-          onSubmit={(e) =>!isLoading&& handleSubmit(e)}
+          onSubmit={(e) => handleSubmit(e)}
           className="flex flex-col gap-3 "
         >
           <div className="flex flex-col">
@@ -123,11 +153,24 @@ function Message() {
           </div>
           <button
             type="submit"
-            className="py-3 mt-2 bg-primary hover:bg-gray-400 text-[18px] text-gray-100 font-bold rounded-md shadow-md hover:shadow-sm"
+            className={
+              (isLoading && "!cursor-not-allowed ",
+              "py-3 mt-2 bg-primary hover:bg-gray-400 text-[18px] text-gray-100 font-bold rounded-md shadow-md hover:shadow-sm")
+            }
           >
             {isLoading ? "Loading..." : "Submit"}
           </button>
         </form>
+        {
+          <Toast
+            show={showToast}
+            type={toastType}
+            title={toastTitle}
+            subtitle1={toastSubtitle1}
+            subtitle2={toastSubtitle2}
+            setShow={setShowToast}
+          />
+        }
       </div>
     </section>
   );

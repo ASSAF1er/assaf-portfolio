@@ -15,6 +15,7 @@ import doctor from "@assets/doctor.jpg";
 import flexing_academy from "@assets/flexing-academy.jpg";
 import SimpleProjectCard from "@/components/SimpleProjectCard";
 import ViewMoreBtn from "@/components/ViewMoreBtn";
+import { useEffect } from "react";
 const Home = () => {
   const skills = [
     { name: "RasenganJS", photo: rasengan },
@@ -64,7 +65,9 @@ const Home = () => {
     //   photo: doctor,
     // },
   ];
-  if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
+  useEffect(() => {
+    if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
+  }, []);
   return (
     <section className="z-10 mb-5">
       <Hero />

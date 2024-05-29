@@ -26,16 +26,13 @@ function Loader() {
         percentage > 60 && "hidden",
         "fixed z-[95] bg-gray h-screen w-full flex items-center justify-center text-primary ",
       )}
-    >
+    ><></>
       <div>
         <h1 className="relative animate-pulse text-[40px] md:text-[60px]  font-bold">
           Beral ASSONFACK
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </h1>
         <div className="min-h-2 title-underline w-[70%] bg-primary"></div>
-        <p className="text-xl font-bold text-center mt-4">
-          Loading... {percentage} %
-        </p>
       </div>
     </div>
   );

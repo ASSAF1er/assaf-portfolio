@@ -16,6 +16,8 @@ import profile2 from "@assets/profile2.jpeg";
 import profile3 from "@assets/profile3.jpeg";
 import profile4 from "@assets/profile4.jpeg";
 import { Link } from "rasengan";
+import { useEffect } from "react";
+
 const About = () => {
   const skillsFrontend = [
     { name: "RasenganJS", photo: rasengan },
@@ -37,17 +39,17 @@ const About = () => {
   const galery = [profile1, profile2, profile3, profile4];
 
   const experiences = [
-    {
-      position: "Frontend Developer - Intern",
-      date: "April 2024 - Present",
-      enterpriseName: "FreemoPay",
-      enterpriseUrl: "https://www.freemopay.com/",
-      enterpriseLocation: "Yaoundé, Cameroon",
-      stack: ["ReactJS", " TypeScript ", "Redux ", "TailwindCSS"],
-    },
+    // {
+    //   position: "Frontend Developer - Intern",
+    //   date: "April 2024 - Present",
+    //   enterpriseName: "FreemoPay",
+    //   enterpriseUrl: "https://www.freemopay.com/",
+    //   enterpriseLocation: "Yaoundé, Cameroon",
+    //   stack: ["ReactJS", " TypeScript ", "Redux ", "TailwindCSS"],
+    // },
     {
       position: "Web Developer - Intern",
-      enterpriseName: "SEED Soft Engine",
+      enterpriseName: "SEED",
       date: "Jully 2023 - September 2023",
       enterpriseUrl: "https://softengine.seeds.cm/",
       enterpriseLocation: " Yaoundé Cameroon",
@@ -66,7 +68,9 @@ const About = () => {
   //     item.classList.add("w-[300px]");
   //   });
   // });
-  if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
+  useEffect(() => {
+    if (typeof document !== "undefined") document.documentElement.scrollTop = 0;
+  }, []);
 
   return (
     <section className=" bg-gray font-ojuju px-[5%] md:px-[10%]">
@@ -91,15 +95,14 @@ const About = () => {
               not only visually stunning but also user-friendly. My passion for
               soft solutions began when I was still a kid. Bringing out abstract
               ideas to digital realities through lines of code has always been
-              full of emotion.
+              full of emotion. From front-end to back-end development, I thrive
+              on the challenges of building robust and scalable web
+              applications.
             </p>
-
             <br />
             <p>
-              From front-end development using HTML, CSS, JavaScript, React,
-              Tailwind and recently RasenganJS to back-end development with
-              frameworks like Node.js and databases like MongoDB, I thrive on
-              the challenges of building robust and scalable web applications.
+              In a fast evolving world, I adapt day by day by learning new
+              technologies to always produce stunning apps in an optimal time.
             </p>
           </div>
           <div className="group flex justify-center w-full md:w-auto h-[250px] md:h-[350px] md:mt-16 gap-2 ">
