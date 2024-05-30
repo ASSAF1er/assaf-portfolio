@@ -20,7 +20,7 @@ function Hero() {
         </p>
         <div className="flex mt-8 md:mt-5">
           <Link
-            to="#"
+            to="https://calendly.com/beral-assaf/30min"
             className="group relative w-[200px]  h-[52px] bg-primary rounded-md  text-white font-medium cursor-pointer overflow-hidden"
           >
             <ul className="absolute w-full left-1/2 top-0 group-hover:top-[-52px] ease-in duration-[300ms] -translate-x-1/2 text-[20px] leadings-[20px] ">
@@ -36,11 +36,14 @@ function Hero() {
           </Link>
         </div>
       </div>
-      <div className="hero-img-container border-4 border-primary overflow-hidden ">
+      <div
+        id="hero-image"
+        className="hero-img-container border-4 border-primary overflow-hidden "
+      >
         <Image
           src={profile}
           alt="profile picture"
-          className="object-cover !size-[290px] md:!size-[350px] grayscale "
+          className="object-cover !size-[290px] md:!size-[350px] grayscale-0 "
         />
       </div>
     </section>

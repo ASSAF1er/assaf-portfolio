@@ -19,7 +19,9 @@ function CustomMouse() {
     }
     //changer l'apparence du cuseur personnalisé lorsqu'il passe sur certains éléments
     if (typeof document !== "undefined") {
-      var links = document.querySelectorAll("a, button, #skill, #about-image");
+      var links = document.querySelectorAll(
+        "a, button, #skill, #about-image, #hero-image ",
+      );
 
       links.forEach((item) => {
         item.addEventListener("mouseover", () => {
