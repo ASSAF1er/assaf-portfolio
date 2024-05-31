@@ -4,6 +4,8 @@ import Tabbar from "@/components/Tabbar";
 import Footer from "@/components/Footer";
 import CustomMouse from "@/components/CustomMouse";
 import Loader from "@/components/Loader";
+import { Analytics } from "@vercel/analytics/react";
+
 const AppLayout = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -20,6 +22,7 @@ const AppLayout = () => {
       <Tabbar />
       <Outlet />
       <Footer />
+      <Analytics />
     </React.Fragment>
   );
 };
