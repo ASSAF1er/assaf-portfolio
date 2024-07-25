@@ -16,6 +16,7 @@ import flexing_academy from "@assets/flexing-academy.jpg";
 import SimpleProjectCard from "@/components/SimpleProjectCard";
 import ViewMoreBtn from "@/components/ViewMoreBtn";
 import { useEffect } from "react";
+import profile from "@assets/profile.png";
 const Home = () => {
   const skills = [
     { name: "RasenganJS", photo: rasengan },
@@ -125,7 +126,8 @@ const Home = () => {
 Home.path = "/";
 Home.metadata = {
   title: "Home | Beral ASSONFACK",
-  description: "Home page",
+  description: "Welcome to my portfolio.",
+  image: profile,
 };
 
 export default Home;

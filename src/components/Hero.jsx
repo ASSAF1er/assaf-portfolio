@@ -15,7 +15,7 @@ function Hero() {
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
         <p className=" relative text-[20px] md:text-[25px] leading-[25px] md:leading-[30px]  mt-3 ">
-          Web Developer / Frontend specialist
+          Web Developer / Frontend passionate
           <div className="absolute top-0 text-cover w-full bg-gray "></div>
         </p>
         <div className="flex mt-8 md:mt-5">

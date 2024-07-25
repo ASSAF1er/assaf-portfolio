@@ -15,6 +15,8 @@ import Image from "@rasenganjs/image";
 import profile2 from "@assets/profile2.jpeg";
 import profile3 from "@assets/profile3.jpeg";
 import profile4 from "@assets/profile4.jpeg";
+import firebase from "@assets/firebase.svg";
+
 import { Link } from "rasengan";
 import { useEffect } from "react";
 
@@ -30,6 +32,7 @@ const About = () => {
   const skillsBackend = [
     { name: "NodeJS", photo: nodejs },
     { name: "Express", photo: express },
+    { name: "Firebase", photo: firebase },
     { name: "MongoDB", photo: mongodb },
   ];
   const skillsDeployment = [
