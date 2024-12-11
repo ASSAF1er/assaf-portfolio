@@ -25,6 +25,7 @@ function ProjectCard({ name, skills, description, url, photo }) {
 
           <p className="text-center text-[20px] font-medium ">{description}</p>
           <Link
+          target='_blank'
             to={url}
             className="relative  rounded-md border-2 border-gray px-4 py-3 text-[18px] font-bold bg-primary text-gray-100 overflow-hidden hover:border-gray-100  duration-200"
           >

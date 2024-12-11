@@ -5,6 +5,8 @@ import digital_school_dashboard from "@assets/digital-school-dashboard.jpg";
 import doctor from "@assets/doctor.jpg";
 import flexing_academy from "@assets/flexing-academy.jpg";
 import SimpleProjectCard from "@/components/SimpleProjectCard";
+import cseAvocat from "@assets/cse-avocat.png"
+import flipCard from "@assets/flip-card.png"
 import { useEffect } from "react";
 const Works = () => {
   const projects = [
@@ -16,6 +18,14 @@ const Works = () => {
       skills: ["ReactJS", "Typescript"],
       url: "https://billit-six.vercel.app",
       photo: billit,
+    },
+    {
+      name: "Lawyers Website",
+      description: " An example of website for a lawyer",
+
+      skills: ["ReactJS", "Typescript"],
+      url: "https://cse-avocat.vercel.app/",
+      photo: cseAvocat,
     },
     {
       name: "AgroRéseau",
@@ -46,6 +56,13 @@ const Works = () => {
       description: "A landing page for a doctor",
       url: "https://figma-to-code-challenge-week1-assaf.vercel.app/",
       photo: doctor,
+    },
+    {
+      name: "Flip Card animation ",
+      skills: ["ReactJS", "TailwindCSS"],
+      description: "A flip card component that can be added to any website to make it stunning",
+      url: "https://flip-card-animation-coral.vercel.app/",
+      photo: flipCard,
     },
   ];
   useEffect(() => {

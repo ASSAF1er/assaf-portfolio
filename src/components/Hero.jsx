@@ -20,6 +20,7 @@ function Hero() {
         </p>
         <div className="flex mt-8 md:mt-5">
           <Link
+            target="_blank"
             to="https://calendly.com/beral-assaf/30min"
             className="group relative w-[200px]  h-[52px] bg-primary rounded-md  text-white font-medium cursor-pointer overflow-hidden"
           >
@@ -43,7 +44,7 @@ function Hero() {
         <Image
           src={profile}
           alt="profile picture"
-          className="object-cover !size-[290px] md:!size-[350px] grayscale-0 "
+          className="object-cover !size-[290px] md:!size-[350px] grayscale hover:grayscale-0 "
         />
       </div>
     </section>

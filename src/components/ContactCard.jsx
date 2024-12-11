@@ -4,6 +4,7 @@ function ContactCard({ photo, title, subTitle, url }) {
   return (
     <Link
       to={url}
+      target='_blank'
       className="group z-10 flex gap-3 justify-normal md:justify-center md:hover:justify-normal px-4  h-[100px] w-[280px] md:w-[100px] md:hover:w-[280px] overflow-hidden  bg-primary rounded-[6px] md:rounded-[50px] hover:rounded-[6px]  shadow-md md:shadow-xl md:hover:shadow-sm duration-500 ease-in-out"
     >
       <div className="flex items-center justify-center rounded-full">

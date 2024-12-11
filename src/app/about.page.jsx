@@ -16,6 +16,8 @@ import profile2 from "@assets/profile2.jpeg";
 import profile3 from "@assets/profile3.jpeg";
 import profile4 from "@assets/profile4.jpeg";
 import firebase from "@assets/firebase.svg";
+import nuxtjs from "@assets/nuxtjs.svg";
+import vuejs from "@assets/vue.svg";
 
 import { Link } from "rasengan";
 import { useEffect } from "react";
@@ -24,6 +26,9 @@ const About = () => {
   const skillsFrontend = [
     { name: "RasenganJS", photo: rasengan },
     { name: "ReactJS", photo: react },
+    { name: "NextJS", photo: vercel },
+    { name: "VueJS", photo: vuejs },
+    { name: "NuxtJS", photo: nuxtjs },
     { name: "TypeScript", photo: typescript },
     { name: "Redux", photo: redux },
     { name: "TailwindCSS", photo: tailwindcss },
@@ -32,7 +37,7 @@ const About = () => {
   const skillsBackend = [
     { name: "NodeJS", photo: nodejs },
     { name: "Express", photo: express },
-    { name: "Firebase", photo: firebase },
+    // { name: "Firebase", photo: firebase },
     { name: "MongoDB", photo: mongodb },
   ];
   const skillsDeployment = [
@@ -42,14 +47,22 @@ const About = () => {
   const galery = [profile1, profile2, profile3, profile4];
 
   const experiences = [
-    // {
-    //   position: "Frontend Developer - Intern",
-    //   date: "April 2024 - Present",
-    //   enterpriseName: "FreemoPay",
-    //   enterpriseUrl: "https://www.freemopay.com/",
-    //   enterpriseLocation: "Yaoundé, Cameroon",
-    //   stack: ["ReactJS", " TypeScript ", "Redux ", "TailwindCSS"],
-    // },
+    {
+      position: "Web Developer - Part time",
+      date: "September 2024 - today",
+      enterpriseName: "CAELIS TECH STUDIO",
+      enterpriseUrl: "https://www.caelis-tech.studio/",
+      enterpriseLocation: "Yaoundé, Cameroon",
+      stack: ["ReactJS","NuxtJS", " TypeScript ", "TailwindCSS", "NodeJS", ],
+    },
+    {
+      position: "Frontend Developer - Intern",
+      date: "April 2024 - August 2024",
+      enterpriseName: "FreemoPay",
+      enterpriseUrl: "https://www.freemopay.com/",
+      enterpriseLocation: "Yaoundé, Cameroon",
+      stack: ["ReactJS", " TypeScript ", "Redux ", "TailwindCSS"],
+    },
     {
       position: "Web Developer - Intern",
       enterpriseName: "SEED",
@@ -127,7 +140,7 @@ const About = () => {
       >
         <h1 className="font-bold text-[40px] text-left ">Skills</h1>
         <div className=" text-[30px] underline mt-5">Frontend</div>
-        <div className="flex justify-center md:justify-normal gap-1 flex-wrap ">
+        <div className="flex justify-center md:justify-normal gap-x-1 gap-y-1 md:gap-y-4 flex-wrap lg:w-4/5 ">
           {skillsFrontend?.map((item, index) => (
             <SkillCard key={index} logo={item.photo} name={item.name} />
           ))}
@@ -157,7 +170,7 @@ const About = () => {
             {experiences.map((item, index) => (
               <div
                 key={index}
-                className="mt-10 group flex flex-col w-full cursor-pointer"
+                className="mt-10 group flex flex-col gap-1 w-full cursor-pointer"
               >
                 <h2 className="text-[24px] md:text-[30px]  ">
                   {item.position}
@@ -165,16 +178,17 @@ const About = () => {
                 <div className="flex flex-col md:flex-row gap-1 justify-between font-medium text-[18px] md:text-[20px] ">
                   <h3 className="">
                     <Link
+                      target="_blank"
                       to={item.enterpriseUrl}
                       className="z-10 underline font-medium hover:font-bold  duration-500"
                     >
                       {item.enterpriseName}
                     </Link>
                     , {item.enterpriseLocation}
-                  </h3>{" "}
+                  </h3>
                   <h3 className="text-[15px] md:text-[17px] ">{item.date}</h3>
                 </div>
-                <h3 className="font-medium text-[15px] mt-5">
+                <h3 className="font-medium text-[15px] mt-3">
                   {item.stack?.map(
                     (stk, index) =>
                       `${stk} ${index === item.stack.length - 1 ? "" : " - "}`,

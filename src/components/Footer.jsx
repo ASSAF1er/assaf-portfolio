@@ -11,7 +11,7 @@ function Footer() {
         <li>
           <ul className="flex gap-3 items-center">
             <li>
-              <Link to="https://github.com/ASSAF1er/">
+              <Link to="https://github.com/ASSAF1er/" target="_blank">
                 <Image
                   src={github}
                   alt="github"
@@ -22,7 +22,10 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="https://www.linkedin.com/in/beral-assonfack-5a462727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <Link
+                to="https://www.linkedin.com/in/beral-assonfack-5a462727b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+              >
                 <Image
                   src={linkedin}
                   alt="github"
@@ -33,7 +36,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="mailto:beral.assaf@gmail.com">
+              <Link to="mailto:beral.assaf@gmail.com" target="_blank">
                 <Image
                   src={email}
                   alt="github"
@@ -48,7 +51,7 @@ function Footer() {
         <li className="ml-2">Beral ASSONFACK © 2024</li>
         <li>
           Built with{" "}
-          <Link to="https://www.beta.rasengan.dev/">
+          <Link to="https://www.beta.rasengan.dev/" target="_blank">
             {" "}
             <span className="font-bold hover:underline">RasenganJS</span>
           </Link>{" "}
