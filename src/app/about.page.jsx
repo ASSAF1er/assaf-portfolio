@@ -170,7 +170,7 @@ const About = () => {
             {experiences.map((item, index) => (
               <div
                 key={index}
-                className="mt-10 group flex flex-col gap-1 w-full cursor-pointer"
+                className="mt-10 group flex flex-col md:gap-1 w-full cursor-pointer"
               >
                 <h2 className="text-[24px] md:text-[30px]  ">
                   {item.position}

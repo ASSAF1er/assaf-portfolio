@@ -48,7 +48,7 @@ function Footer() {
             </li>
           </ul>
         </li>
-        <li className="ml-2">Beral ASSONFACK © 2024</li>
+        <li className="ml-2">Beral ASSONFACK © {new Date().getFullYear()}</li>
         <li>
           Built with{" "}
           <Link to="https://www.beta.rasengan.dev/" target="_blank">
