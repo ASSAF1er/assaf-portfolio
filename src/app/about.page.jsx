@@ -20,7 +20,7 @@ import nuxtjs from "@assets/nuxtjs.svg";
 import vuejs from "@assets/vue.svg";
 
 import { Link } from "rasengan";
-import { useEffect } from "react";
+import { useEffect,useState } from "react";
 
 const About = () => {
   const skillsFrontend = [
@@ -45,6 +45,7 @@ const About = () => {
     { name: "Vercel", photo: vercel },
   ];
   const galery = [profile1, profile2, profile3, profile4];
+  const [activeImage, setActiveImage] = useState(0);
 
   const experiences = [
     {
@@ -53,7 +54,7 @@ const About = () => {
       enterpriseName: "CAELIS TECH STUDIO",
       enterpriseUrl: "https://www.caelis-tech.studio/",
       enterpriseLocation: "Yaoundé, Cameroon",
-      stack: ["ReactJS","NuxtJS", " TypeScript ", "TailwindCSS", "NodeJS", ],
+      stack: ["ReactJS", "NuxtJS", " TypeScript ", "TailwindCSS", "NodeJS"],
     },
     {
       position: "Frontend Developer - Intern",
@@ -126,9 +127,10 @@ const About = () => {
               <img
                 id="about-image"
                 key={index}
+                onMouseEnter={() => setActiveImage(index)}
                 src={item}
                 alt="profile"
-                className="about-image h-full object-cover grayscale rounded-xl hover:w-[200px] md:hover:w-[300px] w-10   duration-500 ease-in-out"
+                className={` ${activeImage == index && "w-[200px] md:w-[300px]"} about-image h-full object-cover grayscale rounded-xl  w-10   duration-500 ease-in-out`}
               />
             ))}
           </div>
