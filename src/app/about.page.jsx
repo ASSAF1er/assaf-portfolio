@@ -6,10 +6,12 @@ import redux from "@assets/redux.svg";
 import tailwindcss from "@assets/tailwindcss.svg";
 import javascript from "@assets/javascript.svg";
 import nodejs from "@assets/nodejs.svg";
+import nestjs from "@assets/nestjs.svg";
 import express from "@assets/Express.js_dark.svg";
 import mongodb from "@assets/mongodb.svg";
 import vercel from "@assets/Vercel_dark.svg";
 import github from "@assets/github.svg";
+import gitlab from "@assets/gitlab.svg";
 import profile1 from "@assets/profile1.jpeg";
 import Image from "@rasenganjs/image";
 import profile2 from "@assets/profile2.jpeg";
@@ -35,13 +37,15 @@ const About = () => {
     { name: "Javascript", photo: javascript },
   ];
   const skillsBackend = [
+    { name: "NestJS", photo: nestjs },
     { name: "NodeJS", photo: nodejs },
     { name: "Express", photo: express },
-    // { name: "Firebase", photo: firebase },
+    { name: "Firebase Auth", photo: firebase },
     { name: "MongoDB", photo: mongodb },
   ];
   const skillsDeployment = [
     { name: "Git & GitHub", photo: github },
+    { name: "GitLab", photo: gitlab },
     { name: "Vercel", photo: vercel },
   ];
   const galery = [profile1, profile2, profile3, profile4];

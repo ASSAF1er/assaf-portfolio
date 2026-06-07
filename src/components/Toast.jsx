@@ -5,7 +5,7 @@ function Toast({ show, type, title, subtitle1, subtitle2, setShow }) {
   return (
     <div
       className={classNames(
-        show ? "left-5" : " -left-[100%] md:-left-[50%] ",
+        show ? "left-5 visible" : "invisible -left-[100%] md:-left-[50%] ",
         type == "error"
           ? "border-danger text-danger"
           : "text-primary border-primary",

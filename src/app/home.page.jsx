@@ -5,7 +5,8 @@ import SkillCard from "@/components/SkillCard";
 import rasengan from "@assets/rasengan.svg";
 import react from "@assets/react.svg";
 import typescript from "@assets/typescript.svg";
-import redux from "@assets/redux.svg";
+import nestjs from "@assets/nestjs.svg";
+import nuxtjs from "@assets/nuxtjs.svg";
 import Message from "@/components/Message";
 import nodejs from "@assets/nodejs.svg";
 import agroreseau from "@assets/agroreseau.jpg";
@@ -19,11 +20,11 @@ import { useEffect } from "react";
 import profile from "@assets/profile.png";
 const Home = () => {
   const skills = [
-    { name: "RasenganJS", photo: rasengan },
-    { name: "ReactJS", photo: react },
-    { name: "TypeScript", photo: typescript },
-
+    { name: "NestJS", photo: nestjs },
     { name: "NodeJS", photo: nodejs },
+    { name: "NuxtJs", photo: nuxtjs },
+    { name: "ReactJS", photo: react },
+    { name: "RasenganJS", photo: rasengan },
   ];
   const projects = [
     {

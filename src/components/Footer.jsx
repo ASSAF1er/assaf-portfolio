@@ -51,7 +51,7 @@ function Footer() {
         <li className="ml-2">Beral ASSONFACK © {new Date().getFullYear()}</li>
         <li>
           Built with{" "}
-          <Link to="https://www.beta.rasengan.dev/" target="_blank">
+          <Link to="https://www.rasengan.dev/" target="_blank">
             {" "}
             <span className="font-bold hover:underline">RasenganJS</span>
           </Link>{" "}

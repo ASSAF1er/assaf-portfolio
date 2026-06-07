@@ -17,10 +17,10 @@ const AppLayout = () => {
   return (
     <React.Fragment>
       <CustomMouse />
-      {isLoading && <Loader />}
-
-      <Tabbar />
-      <Outlet />
+      {isLoading && <Loader />} <Tabbar />
+      <section className="container mx-auto">
+        <Outlet />
+      </section>{" "}
       <Footer />
       <Analytics />
     </React.Fragment>
